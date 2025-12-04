@@ -5,9 +5,8 @@ import react from '@vitejs/plugin-react';
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
-        // [AÑADIDO] Esta es la línea clave para GitHub Pages.
-        // Debe coincidir con el nombre de tu repositorio.
-        base: '/Casa-Historica/', 
+        // [CORRECCIÓN FINAL] Hemos quitado la barra inicial (/)
+        base: 'Casa-Historica/', 
 
         server: {
             port: 3000,
